@@ -55,11 +55,10 @@ ACC = length(find(Y == res))/length(Y);
 MIhat = MutualInfo(Y,res);
 
 [Fscore Precision Recall] = compute_f(Y, predY); 
-[A nmi Entropy] = compute_nmi(Y, predY);
+[A nmi] = compute_nmi(Y, predY);
 AR=RandIndex(Y, predY);
 
-%result = [Fscore Precision Recall nmi AR Entropy ACC Purity];
-result = [ACC nmi Purity Precision Recall Fscore Entropy AR];%[ACC NMI Purity Precision Recall Fscore Entropy AR];
+result = [ACC nmi Purity Precision Recall Fscore AR];%[ACC NMI Purity Precision Recall Fscore AR];
 
 
 
