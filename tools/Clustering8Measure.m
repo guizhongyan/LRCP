@@ -1,4 +1,4 @@
-function result = Clustering8Measure(Y, predY)
+function result = ClusteringMeasure(Y, predY)
 
 if size(Y,2) ~= 1
     Y = Y';
